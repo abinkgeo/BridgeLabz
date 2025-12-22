@@ -1,5 +1,5 @@
 
-num = input("Enter the number")
+num = input("Enter a number")
 
 
 reversed_num = num[::-1]
