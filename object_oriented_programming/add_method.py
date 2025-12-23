@@ -4,11 +4,12 @@ class Addition:
         self.value=value
 
     def __add__(self,other):
-        return self.value+other.value
+        if isinstance(other,Addition):
+             return self.value+other.value
+        raise Exception("Invalid Type")
     
 
 a=Addition(5)
 b=Addition(10)
-
 print(a+b)
         
